@@ -3,6 +3,7 @@ package com.senai.pedro.consultasmedicas.model;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "paciente")
@@ -24,8 +25,8 @@ public class Paciente {
     @Column(name = "telefone", nullable = false, length = 11)
     private String telefone;
 
-    @OneToOne(mappedBy = "paciente", cascade = CascadeType.ALL)
-    private Consulta consulta;
+    @OneToMany(mappedBy = "paciente", cascade = CascadeType.ALL)
+    private List<Consulta> consultas;
 
     public Paciente() {
     }

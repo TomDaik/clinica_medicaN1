@@ -12,7 +12,7 @@ public class Consulta {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "paciente_id", unique = true, nullable = false)
     private Paciente paciente;
 
