@@ -30,10 +30,10 @@ public class Paciente {
     public Paciente() {
     }
 
-    public Paciente(Integer id, String nome, String cpf, LocalDate dataNascimento, String telefone) {
+    public Paciente(Integer id, String cpf,  String nome, LocalDate dataNascimento, String telefone) {
         this.id = id;
-        this.nome = nome;
         this.cpf = cpf;
+        this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.telefone = telefone;
     }

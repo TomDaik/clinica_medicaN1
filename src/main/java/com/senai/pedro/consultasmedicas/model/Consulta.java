@@ -21,10 +21,10 @@ public class Consulta {
     private Medico medico;
 
     @Column
-    private LocalDate dataConsulta; // yyyy-MM-dd
+    private LocalDate dataConsulta;
 
     @Column
-    private LocalTime horarioConsulta; // HH:mm:ss
+    private LocalTime horarioConsulta;
 
     @Enumerated(EnumType.STRING)
     private StatusConsulta status;
